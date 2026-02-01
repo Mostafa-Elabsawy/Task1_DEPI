@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  background-color: #1a2835;
+  color: white;
+  padding: 5rem 0;
+}
+h2 {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image:linear-gradient(180deg,rgba(39, 113, 186, 1) 0%, rgba(157, 93, 203, 1) 100%);
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image:linear-gradient(180deg, rgba(157, 93, 203, 1) 0% , rgba(39, 113, 186, 1) 100%);
+}

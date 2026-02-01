@@ -1,0 +1,91 @@
+.about {
+  background-color: #ddd;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+#about .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+#about .row .col:has(img) {
+  width: 46%;
+  /* border: blue 2px solid; */
+}
+#about .row .col:not(:has(img)) {
+  /* border: 2px solid green; */
+  width: 38%;
+  color: black;
+  padding: 2rem;
+  background-color: #fff;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  a {
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-weight: bold;
+  }
+}
+.about .row:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+#about img {
+  width: 100%;
+  /* height: 100%; */
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #about .row {
+    width: 90%;
+  }
+#about .row .col:has(img) {
+ align-self: stretch !important;
+}
+#about img{
+  height: 100%;
+}
+}
+@media (max-width: 992px) {
+  #about .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .row .col {
+    width: 70% !important;
+  }
+  #about .row .col:has(img) {
+    margin-bottom: -3px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about .row .col {
+    width: 80% !important;
+  }
+}
+@media (max-width: 576px) {
+  #about .row .col {
+    width: 95% !important;
+  }
+  #about .row .col:not(:has(img)) {
+    h1{
+        font-size: 1.5rem;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  #about div.container {
+    width: 1120px;
+  }
+}
