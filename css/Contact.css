@@ -57,11 +57,11 @@
     outline: none;
     width: 100%;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     margin-bottom:1rem;
     font-size: 1.2rem;
     color: white;
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: var(--backgorundcolor);
 }
 #contact input[type="submit"],#contact input[type="reset"]{
@@ -80,6 +80,9 @@
 @media (max-width: 768px){
     #contact form div:nth-child(1),
     #contact form div:nth-child(2){
+        width: 100%;
+    }
+    #contact form{
         width: 100%;
     }
 }
