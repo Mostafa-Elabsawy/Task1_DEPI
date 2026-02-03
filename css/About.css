@@ -62,7 +62,7 @@
     align-items: center;
   }
   #about .row .col {
-    width: 70% !important;
+    width: 80% !important;
   }
   #about .row .col:has(img) {
     margin-bottom: -3px;
@@ -71,7 +71,7 @@
 
 @media (max-width: 768px) {
   #about .row .col {
-    width: 80% !important;
+    width: 85% !important;
   }
 }
 @media (max-width: 576px) {
