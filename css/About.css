@@ -71,7 +71,7 @@
 
 @media (max-width: 768px) {
   #about .row .col {
-    width: 85% !important;
+    width: 90% !important;
   }
 }
 @media (max-width: 576px) {
