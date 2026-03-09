@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            /* Navbar bottom border */
+            .navbar { border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .nav-link { transition: color 0.2s; }
+            .nav-link:hover { color: #fff !important; }
+
+            /* Feature cards */
+            .feature-card {
+                border: 1px solid #e9ecef;
+                border-radius: 16px;
+                padding: 28px 24px;
+                transition: box-shadow 0.2s, transform 0.2s;
+            }
+            .feature-card:hover {
+                box-shadow: 0 8px 28px rgba(13,110,253,0.10);
+                transform: translateY(-3px);
+            }
+
+            /* Pricing PRO card subtle glow */
+            .pricing-pro { box-shadow: 0 4px 24px rgba(13,110,253,0.15); }
+
+            /* Testimonial card hover */
+            .testimonial-card {
+                transition: box-shadow 0.2s, transform 0.2s;
+            }
+            .testimonial-card:hover {
+                box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+                transform: translateY(-2px);
+            }
+
+            /* Contact form focus glow */
+            .form-control:focus { box-shadow: 0 0 0 3px rgba(13,110,253,0.15); }
+        </style>
+    </head>
+    <body>
+        <header class="bg-dark" style="height: 100vh;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand fw-semibold" href="#">Start Project</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto align-items-lg-center gap-1">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">Contact</a>
+                            <a class="btn btn-primary btn-sm ms-2 px-3" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero text-white position-relative overflow-hidden">
+
+                <div class="container py-5 position-relative" style="z-index:1;">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-auto">
+                            <span class="badge rounded-pill bg-primary bg-opacity-25 border border-primary text-primary px-3 py-2 fs-6">
+                                ✦ New — Discover what's possible
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center text-center mb-4">
+                        <div class="col-lg-8">
+                            <h1 class="display-2 fw-bold lh-sm mb-0">
+                                Present your business
+                                <span class="d-block text-primary">in a whole new way</span>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="col-lg-6">
+                            <p class="lead text-white-50 fs-5">
+                                Quickly design and customize responsive mobile-first sites with Bootstrap —
+                                the world's most popular front-end open source toolkit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-auto d-flex flex-wrap gap-3 justify-content-center">
+                            <a class="btn btn-primary btn-lg px-5 py-3 shadow" href="#">Get Started </a>
+                            <a class="btn btn-outline-light btn-lg px-5 py-3" href="#"> Watch Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="col-auto">
+                            <p class="text-white-50 small mb-2">Trusted by teams at</p>
+                            <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center opacity-50">
+                                <span class="fw-bold fs-5 text-white">Stripe</span>
+                                <span class="text-white-50">•</span>
+                                <span class="fw-bold fs-5 text-white">Shopify</span>
+                                <span class="text-white-50">•</span>
+                                <span class="fw-bold fs-5 text-white">Vercel</span>
+                                <span class="text-white-50">•</span>
+                                <span class="fw-bold fs-5 text-white">Linear</span>
+                                <span class="text-white-50">•</span>
+                                <span class="fw-bold fs-5 text-white">Notion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center g-4 text-center">
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                                <p class="display-6 fw-bold mb-1">10M+</p>
+                                <p class="text-white-50 small mb-0">Active Users</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                                <p class="display-6 fw-bold mb-1">99.9%</p>
+                                <p class="text-white-50 small mb-0">Uptime SLA</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                                <p class="display-6 fw-bold mb-1">150+</p>
+                                <p class="text-white-50 small mb-0">Integrations</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                                <p class="display-6 fw-bold mb-1">4.9 ★</p>
+                                <p class="text-white-50 small mb-0">Avg. Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section class="about container py-md-5 py-0 overflow-hidden">
+            <div class="text-center mb-4 pt-5">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">Why Choose Us</span>
+                <h2 class="fw-bold mt-3 mb-1">Everything you need to build faster</h2>
+                <p class="text-muted fs-5 fw-light">Three pillars that keep your team moving.</p>
+            </div>
+            <div class="row gy-5 gy-lg-0 p-5 p-lg-0 my-md-5">
+                <div class="col-lg-4">
+                    <div class="feature-card h-100">
+                    <a href class="btn btn-primary mb-2"><i class="fs-2 bi bi-collection"></i></a>
+                    <h3 class="fw-bold">Component Library</h3>
+                    <p class="text-muted">A rich set of ready-made components that speed up your workflow. Drop them into any project and customize to fit your brand in minutes.</p>
+                    <a href class="text-decoration-none fw-semibold">Explore components <i class="bi bi-arrow-right text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card h-100">
+                    <a href class="btn btn-primary mb-2"><i class="fs-2 bi bi-buildings"></i></a>
+                    <h3 class="fw-bold">Enterprise Ready</h3>
+                    <p class="text-muted">Built to scale with your team. Get SSO, audit logs, and role-based access controls — plus dedicated support as your business grows.</p>
+                    <a href class="text-decoration-none fw-semibold">Learn more <i class="bi bi-arrow-right text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card h-100">
+                    <a href class="btn btn-primary mb-2"><i class="fs-2 bi bi-toggles2"></i></a>
+                    <h3 class="fw-bold">150+ Integrations</h3>
+                    <p class="text-muted">Connect with the tools your team already uses — Slack, GitHub, Figma, Zapier, and more — to keep your workflow uninterrupted.</p>
+                    <a href class="text-decoration-none fw-semibold">See all integrations <i class="bi bi-arrow-right text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Services p-5" style="background-color: #f8f9fA;">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">Pricing</span>
+                </div>
+                <h2 class="fw-bold text-center mb-2">Pay as you grow</h2>
+                <p class="fw-light fs-5 text-center">Simple, transparent pricing — no surprises</p>
+                <div class="row justify-content-around gy-5 mb-md-5">
+                    <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xxl-3 border border-1 border-dark-subtle rounded-3 p-2 p-md-5 bg-white">
+                        <p class="fw-bold text-secondary mb-0">FREE</p>
+                        <p class="text-secondary"><span class="fs-1 text-black fw-bolder d-inline-block">$0</span>/mo</p>
+                        <div>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> <span class="fw-bold">1 User</span></p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> 5 GB storage</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Community access</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Unlimited private projects</p>
+                            <p class="text-secondary"><i class="bi bi-x"></i> Priority support</p>
+                            <p class="text-secondary"><i class="bi bi-x"></i> Dedicated support</p>
+                            <p class="text-secondary"><i class="bi bi-x"></i> Free linked domain</p>
+                            <p class="text-secondary"><i class="bi bi-x"></i> Monthly status reports</p>
+                        </div>
+                        <a href class="btn btn-outline-primary d-block mx-auto">Get started free</a>
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xxl-3 border border-2 border-primary rounded-2 p-2 p-md-5 bg-white position-relative pricing-pro">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-primary rounded-pill px-3">Most Popular</span>
+                        <p class="fw-bold text-dark mb-0 mt-2"><i class="bi bi-star-fill text-warning"></i> PRO</p>
+                        <p class="text-secondary"><span class="fs-1 text-black fw-bolder d-inline-block">$9</span>/mo</p>
+                        <div>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> <span class="fw-bold">5 Users</span></p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> 50 GB storage</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Community access</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Unlimited private projects</p>
+                            <p><i class="bi bi-check text-primary"></i> Priority support</p>
+                            <p><i class="bi bi-check text-primary"></i> Dedicated support</p>
+                            <p><i class="bi bi-check text-primary"></i> Free linked domain</p>
+                            <p class="text-secondary"><i class="bi bi-x"></i> Monthly status reports</p>
+                        </div>
+                        <a href class="btn btn-primary d-block mx-auto">Start Pro plan</a>
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xxl-3 border border-1 border-dark-subtle rounded-2 p-2 p-md-5 bg-white">
+                        <p class="fw-bold text-secondary mb-0">ENTERPRISE</p>
+                        <p class="text-secondary"><span class="fs-1 text-black fw-bolder d-inline-block">$49</span>/mo</p>
+                        <div>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> <span class="fw-bold">Unlimited Users</span></p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Unlimited storage</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Community access</p>
+                            <p><i class="bi bi-check text-primary d-inline-block"></i> Unlimited private projects</p>
+                            <p><i class="bi bi-check text-primary"></i> Priority support</p>
+                            <p><i class="bi bi-check text-primary"></i> Dedicated support</p>
+                            <p><i class="bi bi-check text-primary"></i> <span class="fw-bold">Unlimited</span> linked domains</p>
+                            <p><i class="bi bi-check text-primary"></i> Monthly status reports</p>
+                        </div>
+                        <a href class="btn btn-outline-primary d-block mx-auto">Contact sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Services py-5 px-3">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">Testimonials</span>
+                </div>
+                <h1 class="text-center">What our customers say</h1>
+                <p class="fs-4 fw-light text-center">Thousands of teams trust us every day</p>
+                <div class="row justify-content-center justify-content-around g-5 mt-2 mb-5">
+                    <div class="col-11 col-lg-10 col-xxl-5 d-flex gap-4 p-4 border border-1 border-dark-subtle rounded-3 testimonial-card">
+                        <i class="bi bi-chat-right-quote-fill text-primary fs-1 flex-shrink-0"></i>
+                        <div>
+                            <p class="text-warning mb-2">★★★★★</p>
+                            <p class="fs-5">"Start Project completely changed how our team ships. We went from weeks of setup to launching in a single day. Highly recommend to any growing team."</p>
+                            <p class="text-secondary mb-0 fw-semibold">— Sarah Mitchell, Product Lead · Austin, TX</p>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-10 col-xxl-5 d-flex gap-4 p-4 border border-1 border-dark-subtle rounded-3 testimonial-card">
+                        <i class="bi bi-chat-right-quote-fill text-primary fs-1 flex-shrink-0"></i>
+                        <div>
+                            <p class="text-warning mb-2">★★★★★</p>
+                            <p class="fs-5">"The component library is a game changer. Clean, well-documented, and easy to customize. Our designers and developers are finally on the same page."</p>
+                            <p class="text-secondary mb-0 fw-semibold">— James Okafor, Frontend Engineer · London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Contact py-5" style="background-color: #F8F9FA;">
+            <div class="container text-center">
+                <i class="bi bi-envelope mb-3 fs-1 btn btn-lg btn-primary"></i>
+                <h1>Get in touch</h1>
+                <p class="fs-4 fw-light">We'd love to hear from you — expect a reply within 24 hours</p>
+                <form action class="w-50 mx-auto mt-5 mb-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="FullName" name="FullName" placeholder="Full Name">
+                        <label for="FullName" class="text-black">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" name="Email" id="Email" placeholder="example@email.com" />
+                        <label for="Email" class="text-black">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control rounded-3" name="PhoneNumber" id="PhoneNumber" placeholder="+201xxxxxxxxx" />
+                        <label for="PhoneNumber" class="text-black">Phone Number (optional)</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control rounded-3" name="Message" id="Message" style="height:130px;"
+                            placeholder="Write your message here"></textarea>
+                        <label for="Message" class="text-black">Your Message</label>
+                    </div>
+                    <button class="btn btn-primary btn-lg d-block mx-auto w-100" type="submit">Send Message &rarr;</button>
+                    <p class="text-muted small mt-3 mb-0">We'll get back to you within 24 hours. No spam, ever.</p>
+                </form>
+                <p class="text-muted small mb-5"><i class="bi bi-lock-fill"></i> Your information is private and will never be shared.</p>
+            </div>
+        </section>
+
+        <footer class="py-5" style="background-color: #212529;">
+            <div class="container text-center">
+                <p class="fw-semibold text-white fs-5 mb-3">Start Project</p>
+                <div class="d-flex justify-content-center gap-4 mb-3">
+                    <a href="#" class="text-white-50 text-decoration-none small">Home</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">About</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Services</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Contact</a>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <a href="#" class="text-white-50 fs-5"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white-50 fs-5"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white-50 fs-5"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <p class="text-white-50 small mb-0">© 2026 Start Project — Made with ♥ by Mostafa</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
